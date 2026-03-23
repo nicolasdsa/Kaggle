@@ -1,0 +1,15 @@
+dataset_slug: rtatman/lego-database
+target: num_parts
+random_state: 42
+complexity_bins:
+  - 0
+  - 100
+  - 500
+  - 100000
+model:
+  type: random_forest_regressor
+  params:
+    n_estimators: 300
+    max_depth: 12
+    min_samples_leaf: 2
+
